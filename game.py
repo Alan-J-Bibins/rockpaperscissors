@@ -6,6 +6,8 @@ import time
 
 
 def main():
+    version = 1.0
+    starting_msg(version)
     play_again = "y"
     while play_again == "y":
         cog()
@@ -17,6 +19,11 @@ def main():
 def end_game():
     print("Thank you for playing!!")
     sys.exit()
+
+
+def starting_msg(version):
+    print("Rock Paper Scissors by Alan J Bibins")
+    print(f"Version: {version}")
 
 
 def cog():
@@ -66,3 +73,4 @@ def get_random_input():
 
 if __name__ == "__main__":
     main()
+
